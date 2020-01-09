@@ -1,6 +1,6 @@
-package com.how.arybyungcommon.repository;
+package com.how.muchcommon.repository;
 
-import com.how.arybyungcommon.entity.SiteEntity;
+import com.how.muchcommon.entity.SiteEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

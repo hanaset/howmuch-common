@@ -1,7 +1,7 @@
-package com.how.arybyungcommon.entity;
+package com.how.muchcommon.entity;
 
-import com.how.arybyungcommon.converter.ZonedDateTimeConverter;
-import com.how.arybyungcommon.model.type.ArticleState;
+import com.how.muchcommon.converter.ZonedDateTimeConverter;
+import com.how.muchcommon.model.type.ArticleState;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

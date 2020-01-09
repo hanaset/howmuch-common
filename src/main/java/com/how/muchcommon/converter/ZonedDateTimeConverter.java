@@ -1,4 +1,4 @@
-package com.how.arybyungcommon.converter;
+package com.how.muchcommon.converter;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

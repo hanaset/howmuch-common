@@ -1,4 +1,4 @@
-package com.how.arybyungcommon.model.type;
+package com.how.muchcommon.model.type;
 
 public enum  ArticleState {
     S, // 판매 중
