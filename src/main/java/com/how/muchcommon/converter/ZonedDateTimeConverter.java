@@ -1,4 +1,4 @@
-package com.hanaset.arybyungcommon.converter;
+package com.how.arybyungcommon.converter;
 
 import javax.persistence.AttributeConverter;
 import javax.persistence.Converter;

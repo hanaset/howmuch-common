@@ -1,6 +1,6 @@
-package com.hanaset.arybyungcommon.repository;
+package com.how.arybyungcommon.repository;
 
-import com.hanaset.arybyungcommon.entity.ArticleEntity;
+import com.how.arybyungcommon.entity.ArticleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,6 +1,6 @@
-package com.hanaset.arybyungcommon.entity;
+package com.how.arybyungcommon.entity;
 
-import com.hanaset.arybyungcommon.converter.ZonedDateTimeConverter;
+import com.how.arybyungcommon.converter.ZonedDateTimeConverter;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;

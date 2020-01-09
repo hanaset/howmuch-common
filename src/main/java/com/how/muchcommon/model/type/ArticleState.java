@@ -1,4 +1,4 @@
-package com.hanaset.arybyungcommon.model.type;
+package com.how.arybyungcommon.model.type;
 
 public enum  ArticleState {
     S, // 판매 중
