@@ -22,6 +22,7 @@ public class ArticleEntity {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(name = "article_id")
     private Long articleId;
 
     private String subject;
