@@ -1,4 +1,4 @@
-package com.how.muchcommon.entity;
+package com.how.muchcommon.entity.japentity;
 
 import com.how.muchcommon.converter.ZonedDateTimeConverter;
 import lombok.AllArgsConstructor;
@@ -9,20 +9,21 @@ import lombok.NoArgsConstructor;
 import javax.persistence.*;
 import java.time.ZonedDateTime;
 
+@Entity
 @Data
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Entity
-@Table(name = "TC_SITE")
-public class SiteEntity {
+@Table(name = "TB_FILTER")
+public class FilterEntity {
 
     @Id
-    private String code;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    private String name;
+    private String site;
 
-    private String description;
+    private String word;
 
     @Column(name = "reg_dtime")
     @Convert(converter = ZonedDateTimeConverter.class)

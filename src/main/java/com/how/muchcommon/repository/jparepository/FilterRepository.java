@@ -1,6 +1,6 @@
-package com.how.muchcommon.repository;
+package com.how.muchcommon.repository.jparepository;
 
-import com.how.muchcommon.entity.FilterEntity;
+import com.how.muchcommon.entity.japentity.FilterEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
