@@ -13,7 +13,6 @@ import org.springframework.data.elasticsearch.annotations.Field;
 import javax.persistence.EnumType;
 import javax.persistence.Enumerated;
 import javax.persistence.Id;
-import java.time.LocalDateTime;
 import java.util.Date;
 
 @Data
@@ -45,7 +44,7 @@ public class ArticleEsEntity {
     private ArticleState state;
 
     @JsonProperty("posting_dtime")
-    @Field(format = )
+    @Field(format = DateFormat.date_hour_minute)
     private Date postingDtime;
 
     @JsonProperty("reg_dtime")
