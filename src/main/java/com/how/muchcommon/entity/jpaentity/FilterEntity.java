@@ -1,4 +1,4 @@
-package com.how.muchcommon.entity.japentity;
+package com.how.muchcommon.entity.jpaentity;
 
 import com.how.muchcommon.converter.ZonedDateTimeConverter;
 import lombok.AllArgsConstructor;

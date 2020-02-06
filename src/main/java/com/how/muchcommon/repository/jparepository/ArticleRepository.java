@@ -1,6 +1,6 @@
 package com.how.muchcommon.repository.jparepository;
 
-import com.how.muchcommon.entity.japentity.ArticleEntity;
+import com.how.muchcommon.entity.jpaentity.ArticleEntity;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 

@@ -1,4 +1,4 @@
-package com.how.muchcommon.entity.japentity;
+package com.how.muchcommon.entity.jpaentity;
 
 import com.how.muchcommon.converter.ZonedDateTimeConverter;
 import com.how.muchcommon.model.type.ArticleState;
@@ -6,10 +6,8 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.data.elasticsearch.annotations.Document;
 
 import javax.persistence.*;
-import java.lang.annotation.Documented;
 import java.time.ZonedDateTime;
 
 @Entity
@@ -31,15 +29,18 @@ public class ArticleEntity {
 
     private Long price;
 
+    @Column(length = 512)
     private String url;
 
     private String site;
 
+    @Column(length = 1024)
     private String image;
 
     @Enumerated(EnumType.STRING)
     private ArticleState state;
 
+    @Column(length = 2500)
     private String content;
 
     @Column(name = "posting_dtime")
