@@ -6,6 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface ArticleEsRepository extends ElasticsearchRepository<ArticleEsEntity, Long> {
-    
+
 }
 

@@ -40,7 +40,7 @@ public class ArticleEntity {
     @Enumerated(EnumType.STRING)
     private ArticleState state;
 
-    @Column(length = 2500)
+    @Column(length = 4096)
     private String content;
 
     @Column(name = "posting_dtime")

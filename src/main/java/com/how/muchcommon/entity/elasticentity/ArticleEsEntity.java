@@ -19,7 +19,7 @@ import java.util.Date;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Document(indexName = "arybyung", type = "doc")
+@Document(indexName = "arybyung")
 public class ArticleEsEntity {
 
     @Id
