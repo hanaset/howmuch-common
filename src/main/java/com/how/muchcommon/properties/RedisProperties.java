@@ -1,6 +1,5 @@
 package com.how.muchcommon.properties;
 
-import lombok.Data;
 import lombok.Getter;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
