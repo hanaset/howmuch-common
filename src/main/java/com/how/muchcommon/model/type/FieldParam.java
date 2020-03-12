@@ -4,10 +4,8 @@ import lombok.Getter;
 
 @Getter
 public enum FieldParam {
-    state("state"),
     date("posting_dtime"),
-    price("price"),
-    subject("subject")
+    price("price")
     ;
 
     private String value;
