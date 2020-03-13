@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface SiteRepository extends JpaRepository<SiteEntity, String> {
+
+    SiteEntity findByCode(String code);
 }
