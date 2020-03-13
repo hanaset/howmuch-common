@@ -24,6 +24,9 @@ public class SiteEntity {
 
     private String description;
 
+    @Column(name = "is_check")
+    private String isCheck;
+
     @Column(name = "reg_dtime")
     @Convert(converter = ZonedDateTimeConverter.class)
     private ZonedDateTime regDtime;
