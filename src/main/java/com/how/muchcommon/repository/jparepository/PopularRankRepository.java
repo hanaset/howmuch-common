@@ -15,4 +15,5 @@ public interface PopularRankRepository extends JpaRepository<PopularRankEntity, 
     @Query(value = "select search_date, keyword, sum(count) as count, reg_dtime, upd_dtime " +
             "from TB_POPULAR_CHART where search_date between :startTime and :endTime group by keyword order by count desc LIMIT 10", nativeQuery = true)
     List<PopularRankEntity> findAllByPopularRank(@Param("startTime") ZonedDateTime start, @Param("endTime")ZonedDateTime end);
+
 }
