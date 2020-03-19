@@ -2,7 +2,6 @@ package com.how.muchcommon.entity.elasticentity;
 
 import com.fasterxml.jackson.annotation.JsonProperty;
 import com.how.muchcommon.model.type.ArticleState;
-import com.how.muchcommon.model.type.MarketName;
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
@@ -37,8 +36,7 @@ public class ArticleEsEntity {
 
     private String url;
 
-    @Enumerated(EnumType.STRING)
-    private MarketName site;
+    private String site;
 
     private String image;
 
