@@ -6,7 +6,7 @@ import lombok.Getter;
 public enum MarketName {
     joonggonara("joonggonara"),
     danggn("danggn"),
-    bunzang("bunzang")
+    bunjang("bunjang")
     ;
 
     private String name;
