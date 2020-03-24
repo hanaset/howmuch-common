@@ -10,5 +10,7 @@ import java.util.Optional;
 public interface ArticleRepository extends JpaRepository<ArticleEntity, Long> {
 
     ArticleEntity findTopByOrderByArticleIdDesc();
-    Optional<ArticleEntity> findTopBySiteOrderByArticleIdDesc(String site);
+    Optional<ArticleEntity> findTop1BySiteOrderByArticleIdDesc(String site);
+
+
 }
