@@ -1,4 +1,4 @@
-package com.how.muchcommon.entity.jpaentity;
+package com.how.muchcommon.entity.jpaentity.id;
 
 import lombok.*;
 

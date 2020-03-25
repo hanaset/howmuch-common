@@ -1,6 +1,7 @@
 package com.how.muchcommon.entity.jpaentity;
 
 import com.how.muchcommon.converter.ZonedDateTimeConverter;
+import com.how.muchcommon.entity.jpaentity.id.PopularRankId;
 import lombok.AccessLevel;
 import lombok.Builder;
 import lombok.Getter;

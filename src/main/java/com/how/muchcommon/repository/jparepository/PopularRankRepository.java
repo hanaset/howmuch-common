@@ -1,7 +1,7 @@
 package com.how.muchcommon.repository.jparepository;
 
 import com.how.muchcommon.entity.jpaentity.PopularRankEntity;
-import com.how.muchcommon.entity.jpaentity.PopularRankId;
+import com.how.muchcommon.entity.jpaentity.id.PopularRankId;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;

@@ -1,10 +1,8 @@
 package com.how.muchcommon.entity.jpaentity;
 
 import com.how.muchcommon.converter.ZonedDateTimeConverter;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import com.how.muchcommon.entity.jpaentity.id.CrawlingStatId;
+import lombok.*;
 import org.hibernate.annotations.CreationTimestamp;
 import org.hibernate.annotations.UpdateTimestamp;
 
@@ -12,18 +10,24 @@ import javax.persistence.*;
 import java.time.ZonedDateTime;
 
 @Entity
-@Data
 @Builder
+@Data
 @NoArgsConstructor
 @AllArgsConstructor
-@Table(name = "TB_TOP_ARTICLE")
-public class TopArticleEntity {
+@Table(name = "TB_CRAWLING_STAT")
+public class CrawlingStatEntity {
 
-    @Id
-    private String site;
+    @EmbeddedId
+    private CrawlingStatId id;
 
-    @Column(name = "article_id")
-    private Long articleId;
+    @Column(name = "success_count")
+    private long successCount;
+
+    @Column(name = "fail_count")
+    private Long failCount;
+
+    @Column(name = "filtering_count")
+    private Long filteringCount;
 
     @Column(name = "reg_dtime")
     @CreationTimestamp
@@ -35,4 +39,3 @@ public class TopArticleEntity {
     @Convert(converter = ZonedDateTimeConverter.class)
     private ZonedDateTime updDtime;
 }
-
